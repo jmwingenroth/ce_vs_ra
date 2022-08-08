@@ -43,11 +43,20 @@ data_long <- tibble(r_ce_1.5, r_ce_2.0, r_ce_2.5, r_ce_3.0, r_ra_1.5, r_ra_2.0, 
     mutate(rate = str_extract(name, "\\d*[.]\\d*"),
            type = if_else(str_detect(name, "ce"), "Certainty-equivalent", "Risk-adjusted"))
 
-data_long %>%           
+p1 <- data_long %>%           
     ggplot(aes(x = year, y = value, color = rate, lty = type)) +
     geom_line() +
     scale_y_continuous(labels = scales::percent) +
     labs(x = "Year", y = "Discount Rate", lty = "", color = "Near-term discount rate") +
     theme_bw()
 
-ggsave("ce_vs_ra.png")
+ggsave("ce_vs_ra.png", p1)
+
+## Export data
+
+data_wide <- data_long %>%
+    select(year, name, value) %>%
+    pivot_wider(names_from = name) %>%
+    filter(year > 2020)
+
+write_csv(data_wide, "ce_vs_ra.csv")
