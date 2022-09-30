@@ -1,0 +1,21 @@
+"sector","discount_rate","ce_scghg"
+slr,"3.0% Ramsey",0.7190331855131828
+agriculture,"2.0% Ramsey",64.98971576526228
+total,"3.0% Ramsey",61.40907944480495
+slr,"2.0% Ramsey",1.5336124486995988
+energy,"3.0% Ramsey",2.6711778556845354
+energy,"2.0% Ramsey",6.627415011023103
+cromar_mortality,"2.0% CDR",334.0202697054536
+agriculture,"3.0% Ramsey",28.017796045683507
+agriculture,"2.0% CDR",66.67737977035912
+cromar_mortality,"3.0% Ramsey",30.001072357911873
+total,"2.0% Ramsey",142.3416928178482
+total,"3.0% CDR",89.50142261585907
+slr,"2.0% CDR",1.3906890271549712
+cromar_mortality,"2.0% Ramsey",69.19094959278137
+energy,"3.0% CDR",5.853037417893586
+energy,"2.0% CDR",37.86835370679066
+agriculture,"3.0% CDR",24.450913643613134
+slr,"3.0% CDR",0.5420189939266434
+total,"2.0% CDR",439.9566921953014
+cromar_mortality,"3.0% CDR",58.65545256159486
